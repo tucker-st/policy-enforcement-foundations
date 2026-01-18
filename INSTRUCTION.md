@@ -48,7 +48,7 @@ Key paths:
 
 From the repository root:
 
-```
+```text
 make help
 make eval EXAMPLE=examples/input.sample.json
 make gate EXAMPLE=examples/input.sample.json
@@ -64,31 +64,31 @@ Expected:
 
 Show available targets:
 
-```
+```text
 make help
 ```
 
 Check prerequisites:
 
-```
+```text
 make check-tools
 ```
 
 Evaluate policy (creates artifacts):
 
-```
+```text
 make eval EXAMPLE=examples/input.sample.json
 ```
 
 Enforce the gate (exit 0 on allow, non-zero on deny):
 
-```
+```text
 make gate EXAMPLE=examples/input.sample.json
 ```
 
 Clean artifacts:
 
-```
+```text
 make clean
 ```
 
@@ -98,7 +98,7 @@ make clean
 
 Validate the policy file parses cleanly under the OPA container:
 
-```
+```text
 docker run --rm -v "$(pwd)":/work -w /work openpolicyagent/opa:latest check policies/policy.rego
 ```
 
@@ -158,13 +158,13 @@ Preconditions:
 
 Usage:
 
-```
+```text
 ./scripts/adapt_and_gate.sh /path/to/docker-image-assurance/out/vuln.json
 ```
 
 Example (sibling repositories):
 
-```
+```text
 ./scripts/adapt_and_gate.sh ../docker-image-assurance/out/vuln.json
 ```
 
