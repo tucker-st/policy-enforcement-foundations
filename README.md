@@ -25,9 +25,11 @@ This repo focuses on the **policy decision** and **gating mechanics**, not on bu
 
 ---
 
-## Quick Start
+## Cross-Repository Workflow Guide
 
-Evaluate the included example input:
+This repository participates in a larger, composable container image control chain.
 
-```
-make eval EXAMPLE=examples/input.sample.json
+For an end-to-end workflow covering hygiene, assurance, and policy enforcement, see:
+
+- CONTAINER_IMAGE_CONTROL_CHAIN_GUIDE.md in the DevSecOps Lab Index repository
+
